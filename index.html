@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Sono", sans-serif;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100vh;
+      gap: 1rem;
+
+    }
+
+    .pricing-plan {
+      background-color: rgba(0, 0, 0, 0.116);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 2%;
+      min-width: 25rem;
+
+    }
+
+    .plan-title {
+      margin: 0.3rem;
+      padding: 0.4rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .plan-price {
+      margin: 0.3rem;
+      padding: 0.4rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    .plan-features {
+      margin: 0.3rem;
+      padding: 0.4rem;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 0.3rem;
+      padding: 0.4rem;
+      align-items: center;
+    }
+
+    .plan-button {
+      margin: 1rem;
+      padding: 0.7rem;
+      background-color: orange;
+      color: white;
+      border-radius: 10%;
+      border: none;
+
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$99.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 2 Monthly visits</li>
+        <li>✅ 1 Hour general clean</li>
+        <li>🚫 weekends</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$199.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 4 Monthly visits</li>
+        <li>✅ 1.5 Hour general clean</li>
+        <li>✅ Week-days Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$449.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 4 Monthly visits</li>
+        <li>✅ 2 Hour intensive clean</li>
+        <li>✅ 24/7 Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+  </div>
+</body>
+
+</html>
